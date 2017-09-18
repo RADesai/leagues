@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import actions from '../actions/leagueActions';
 import LeagueTable from '../components/LeagueTable';
-import { Button } from 'react-bootstrap';
 import '../assets/scss/App.scss';
 
 class App extends Component {
@@ -27,7 +26,6 @@ class App extends Component {
     return (
       <div className="league-main">
         <h1 className="league-main-title">Leagues</h1>
-        <Button>Default</Button>
         <LeagueTable league={ this.props.league } />
       </div>
     )

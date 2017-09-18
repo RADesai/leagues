@@ -5,17 +5,8 @@ import '../assets/scss/LeagueTable.scss';
 
 export default function LeagueTable(props) {
     return (
-        <div className="container">
-            <Grid className="league-table-main">
-                <Row>
-                    <Col xs={6}>
-                        <h3>LeagueTable</h3>
-                    </Col>
-                    <Col xs={6}>
-                        <h3>LeagueTable-2</h3>
-                    </Col>
-                </Row>
-            </Grid>
+        <div className="container league-table-main">
+            <h3>LeagueTable</h3>
         </div>
     )
 }
