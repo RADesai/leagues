@@ -1,0 +1,11 @@
+@import "./Variables";
+
+.team {
+    border: 2px solid $lily;
+    border-radius: 5px 3px 5px 3px;
+    padding: 5px;
+    margin-bottom: 15px;
+    .team-info {
+        color: $lily;
+    }
+}

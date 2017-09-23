@@ -1,11 +1,15 @@
-// $app-font: 'Quicksand', sans-serif;
-$secondary-light: #EDFAFF;
-$secondary-dark: #2A6881;
+@import "./Variables";
 
-.table {}
-.table-header {
-    color: $secondary-dark;
-}
-.table-body {
-    background-color: $secondary-light;
+.league-table {
+    color: $calypso;
+    .league-table-header {
+        font-size: 30px;
+    }
+    .league-table-header hr {
+        margin-top: 0;
+        width: 35%;
+        border-color: $calypso;
+        box-shadow: 0px 0px 1px 0px $blue-dianne;
+        transition: .3s ease-out;
+    }
 }

@@ -1,6 +1,6 @@
 const league = {
     id: 0,
-    name: "EBL",
+    name: "Exon Basketball League",
     teams: [
         {
             id: 0,

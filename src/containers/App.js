@@ -9,8 +9,6 @@ import '../assets/scss/App.scss';
 class App extends Component {
     constructor(props) {
         super(props);
-        const { location: { query } } = props;
-        this.queryParams = query;
     }
 
     componentDidMount() {

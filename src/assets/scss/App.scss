@@ -1,15 +1,7 @@
-$app-font: 'Quicksand', sans-serif;
-$primary-light: #F6FBFA;
-$primary-dark: #244958;
+@import "./Variables";
 
 body {
-    background-color: $primary-light;
     font-family: $app-font;
-}
-
-.league-main {
-    color: $primary-dark;
-    .league-main-title {
-        color: black;
-    }
+    color: $blue-dianne;
+    background-color: $aqua;
 }
