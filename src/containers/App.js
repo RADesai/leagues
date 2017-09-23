@@ -7,52 +7,45 @@ import LeagueTable from '../components/LeagueTable';
 import '../assets/scss/App.scss';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    const { location: { query } } = props;
-    this.queryParams = query;
-  }
+    constructor(props) {
+        super(props);
+        const { location: { query } } = props;
+        this.queryParams = query;
+    }
 
-  componentDidMount() {
-    const name = "Holy Trinity";
-      this.setLeague(name);
-  }
+    componentDidMount() {
+        this.setLeague();
+    }
 
-  setLeague(name) {
-    this.props.actions.fetchLeague(name);
-  }
+    setLeague() {
+        this.props.actions.fetchLeague();
+    }
 
-  render() {
-    return (
-      <div className="league-main">
-        <h1 className="league-main-title">Leagues</h1>
-        <LeagueTable league={ this.props.league } />
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div className="league-main">
+                <h1 className="league-main-title">Leagues</h1>
+                <hr />
+                <LeagueTable { ...this.props }/>
+            </div>
+        )
+    }
 }
 
 App.PropTypes = {
-  actions: PropTypes.object,
-  league: PropTypes.object
+    actions: PropTypes.object,
+    league: PropTypes.object
 };
 
 function mapStateToProps(state) {
-  const { name, teams } = state.leagueReducer;
-  const league = {
-    name: name,
-    teams: teams
-  }
-  return { league };
+    const { league } = state.leagueReducer;
+    return { league };
 };
 
 function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators({ ...actions }, dispatch)
-  };
+    return {
+        actions: bindActionCreators({ ...actions }, dispatch)
+    };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -2,7 +2,10 @@
 $secondary-light: #EDFAFF;
 $secondary-dark: #2A6881;
 
-.league-table-main {
-    background-color: $secondary-light;
+.table {}
+.table-header {
     color: $secondary-dark;
+}
+.table-body {
+    background-color: $secondary-light;
 }

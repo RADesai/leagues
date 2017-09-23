@@ -2,13 +2,13 @@ import { FETCH_LEAGUE, UPDATE_LEAGUE } from '../constants';
 import fetchLeague from '../services.js';
 
 const actions = {
-    fetchLeague: (leagueName) => ({
+    fetchLeague: () => ({
         type: FETCH_LEAGUE,
-        payload: fetchLeague(leagueName)
+        payload: fetchLeague()
     }),
-    updateLeague: (league) => ({
+    updateLeague: (newLeague) => ({
         type: UPDATE_LEAGUE,
-        payload: league
+        payload: newLeague
     })
 };
 
