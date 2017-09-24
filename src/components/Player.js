@@ -6,7 +6,12 @@ export default function Player(props) {
     const { player } = props;
 
     return player ?
-        <div key={player.id.toString()}>{ player.name }</div>
+        <div className="row player">
+            <div className="col-sm-2 player-info">
+                <div className="player-position">{ player.position }</div>
+                { player.name }
+            </div>
+        </div>
         : <div/>
 }
 

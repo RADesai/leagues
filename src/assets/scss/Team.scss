@@ -1,11 +1,18 @@
 @import "./Variables";
 
 .team {
-    border: 2px solid $lily;
+    border: 2px solid darken($lily, 20%);
     border-radius: 5px 3px 5px 3px;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 15px;
+    transition: .2s ease-out;
     .team-info {
-        color: $lily;
+        color: darken($lily, 20%);
+        .team-name {
+            font-size: 26px;
+        }
     }
+}
+.team:hover {
+    background-color: lighten($lily, 20%);
 }

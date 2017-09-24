@@ -38,12 +38,12 @@ App.PropTypes = {
 function mapStateToProps(state) {
     const { league } = state.leagueReducer;
     return { league };
-};
+}
 
 function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators({ ...actions }, dispatch)
     };
-};
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

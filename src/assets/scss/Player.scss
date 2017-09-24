@@ -1,1 +1,14 @@
 @import "./Variables";
+
+.player {
+    color: $blue-dianne;
+    .player-info {
+        font-size: 18px;
+    }
+    .player-position {
+        padding-right: 10px;
+        display: inline;
+        font-size: 16px;
+        color: $lily;
+    }
+}

@@ -32,75 +32,93 @@ const league = {
         {
             id: 0,
             teamId: 0,
-            name: "Carlo"
+            name: "Carlo",
+            position: "F"
         }, {
             id: 1,
             teamId: 0,
-            name: "Ruth"
+            name: "Ruth",
+            position: "C"
         }, {
             id: 2,
             teamId: 0,
-            name: "Nash"
+            name: "Nash",
+            position: "G"
         }, {
             id: 3,
             teamId: 1,
-            name: "Meyer"
+            name: "Meyer",
+            position: "F"
         }, {
             id: 4,
             teamId: 1,
-            name: "Dio"
+            name: "Dio",
+            position: "G"
         }, {
             id: 5,
             teamId: 1,
-            name: "Rondo"
+            name: "Rondo",
+            position: "F"
         }, {
             id: 6,
             teamId: 2,
-            name: "Tony"
+            name: "Tony",
+            position: "F"
         }, {
             id: 7,
             teamId: 2,
-            name: "Vog"
+            name: "Vog",
+            position: "C"
         }, {
             id: 8,
             teamId: 2,
-            name: "Sala"
+            name: "Sala",
+            position: "F"
         }, {
             id: 9,
             teamId: 3,
-            name: "Zay"
+            name: "Zay",
+            position: "F"
         }, {
             id: 10,
             teamId: 3,
-            name: "Ares"
+            name: "Ares",
+            position: "C"
         }, {
             id: 11,
             teamId: 3,
-            name: "Nore"
+            name: "Nore",
+            position: "G"
         }, {
             id: 12,
             teamId: 4,
-            name: "Green"
+            name: "Green",
+            position: "F"
         }, {
             id: 13,
             teamId: 4,
-            name: "BT"
+            name: "BT",
+            position: "G"
         }, {
             id: 14,
             teamId: 4,
-            name: "Moore"
+            name: "Moore",
+            position: "G"
         }, {
             id: 15,
             teamId: 5,
-            name: "Cuz"
+            name: "Cuz",
+            position: "C"
         }, {
             id: 16,
             teamId: 5,
-            name: "Navy"
+            name: "Navy",
+            position: "G"
         }, {
             id: 17,
             teamId: 5,
-            name: "Goaly"
+            name: "Goaly",
+            position: "G"
         }
     ]
 };
