@@ -17,7 +17,7 @@ export default function LeagueTable(props) {
                     <Team
                         key={ team.id }
                         team={ team }
-                        players={ league.players.filter((player) => player.teamId === team.id) }
+                        players={ league.players.filter((player) => player.teamId === team.teamId) }
                     />
                 )}
             </div>

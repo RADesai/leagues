@@ -8,14 +8,17 @@ export default function Team(props) {
 
     return team && players ?
         <div className="row">
-            <div className="col-xs-1 col-md-2"></div>
-            <div className="team col-xs-10 col-md-8">
-                <div className="row">
-                    <div className="team-info col-xs-4 col-md-3">
-                        <div className="team-name">{ team.name }</div>
-                        <div className="team-record text-muted">{ team.record }</div>
+            <div className="mx-auto text-center team col-xs-10 col-md-10">
+                <div className="row team-name">
+                    <div className="col-md-12">
+                        <div>{ team.teamName }</div>
                     </div>
-                    <div className="team-roster col-xs-8 col-md-9">
+                </div>
+                <div className="row team-info text-left">
+                    <div className="col-sm-2 col-md-3">
+                        <img className="team-logo" src={ team.logo } />
+                    </div>
+                    <div className="team-roster col-sm-10 col-md-9">
                         { players.map((player) =>
                             <Player
                                 key={ player.id.toString() }

@@ -1,7 +1,7 @@
 @import "./Variables";
 
 .player {
-    color: $blue-dianne;
+    color: lighten($blue-dianne, 10%);
     .player-info {
         font-size: 18px;
     }

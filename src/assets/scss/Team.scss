@@ -1,18 +1,24 @@
 @import "./Variables";
 
 .team {
-    border: 2px solid darken($lily, 20%);
-    border-radius: 5px 3px 5px 3px;
-    padding: 10px;
-    margin-bottom: 15px;
-    transition: .2s ease-out;
+    .team-name {
+        font-size: 26px;
+    }
     .team-info {
+        border: 2px solid darken($lily, 20%);
+        border-radius: 5px 3px 5px 3px;
+        padding: 10px;
+        margin-bottom: 15px;
+        transition: .2s ease-out;
         color: darken($lily, 20%);
-        .team-name {
-            font-size: 26px;
+        .team-logo {
+            width: 75%;
         }
     }
 }
-.team:hover {
+.team-name:hover {
+    cursor: pointer;
+}
+.team-name:hover ~ .team-info {
     background-color: lighten($lily, 20%);
 }
